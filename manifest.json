@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "SearchBuddy",
+    "version": "1.0",
+    "description": "Summarize search results and chat with a local Ollama setup.",
+    "icons": {
+        "16": "assets/icons/icon-16.png",
+        "32": "assets/icons/icon-32.png",
+        "48": "assets/icons/icon-48.png",
+        "96": "assets/icons/icon-96.png"
+    },
+    "permissions": [
+      "tabs",
+      "storage",
+      "activeTab",
+      "http://*/*",
+      "https://*/*"
+    ],
+    "browser_action": {
+      "default_popup": "src/pages/popup.html",
+      "default_icon": {
+        "16": "assets/icons/icon-16.png",
+        "32": "assets/icons/icon-32.png",
+        "48": "assets/icons/icon-48.png"
+      }
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SearchBuddy</title>
+  <link rel="stylesheet" href="../styles/config.css">
+</head>
+<body>
+  <div class="header">
+    <img src="../../assets/icons/icon-96.png" alt="SearchBuddy">
+    <h1>SearchBuddy</h1>
+  </div>
+
+  <div class="config-section">
+    <div class="config-step">
+      <label for="ollama-url">Ollama URL</label>
+      <div class="url-container">
+        <input type="url" id="ollama-url" placeholder="http://localhost:11434" value="http://localhost:11434">
+      </div>
+      <div id="connection-status" class="status"></div>
+    </div>
+
+    <div class="config-step" id="model-section" style="display: none;">
+      <label for="model-select">Select Model</label>
+      <select id="model-select" disabled>
+        <option value="">Loading models...</option>
+      </select>
+      <button id="refresh-models" class="button-secondary">Refresh Models</button>
+    </div>
+  </div>
+
+  <div class="button-row">
+    <button id="save-config" disabled>Save Configuration</button>
+    <button id="back-button" class="button-secondary">Back</button>
+  </div>
+
+  <script src="../scripts/config.js" type="module"></script>
+</body>
+</html>

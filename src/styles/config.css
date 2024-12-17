@@ -1,0 +1,97 @@
+@import 'commons.css';
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.config-section {
+    background: var(--output-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.config-step {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.config-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.config-step label {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.status {
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.success {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+}
+
+.error {
+    background: rgba(244, 67, 54, 0.1);
+    color: #f44336;
+}
+
+#model-section.active {
+    display: block !important;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.button-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.button-row button {
+    flex: 1;
+    margin: 0;
+}
+
+.url-container {
+    margin-bottom: 8px;
+}
+
+.url-container input {
+    width: 100%;
+}
